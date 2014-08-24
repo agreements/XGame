@@ -1,0 +1,41 @@
+<form action="index.php?site=bansadd" method="post">
+<div id="maintitle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="50%"><h1>&#8226; CREATE NEW BAN</h1></td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td width="150"><h4>Member ID:</h4></td>
+    <td><h4><input name="memberID" type="text" id="memberID" maxlength="10" />
+    </h4></td>
+  </tr>
+  <tr>
+    <td><h4>Reason:</h4></td>
+    <td>
+    <h4>
+      <input name="reason" type="text" id="reason" maxlength="100" />
+    </h4>    </td>
+  </tr>
+  <tr>
+    <td><h4>Expire:</h4></td>
+    <td><select name="duration" id="duration">
+      <option value="1 day" selected="selected">1 day</option>
+      <option value="7 day">7 Days</option>
+      <option value="1 month">1 Month</option>
+      <option value="3 month">3 Months</option>
+      <option value="6 month">6 Months</option>
+      <option value="12 month">12 Months</option>
+    </select>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="submit" name="ban" id="ban" value="add ban" /></td>
+  </tr>
+</table>
+</div>
+</form>

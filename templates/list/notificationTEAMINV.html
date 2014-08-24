@@ -1,0 +1,14 @@
+<div id='list'>
+<form method='post' action='index.php?site=teammembers'>
+<table width='100%' border='0' cellspacing='1' cellpadding='0'>
+  <tr>
+    <td><h4>You have been invited to join <a href='index.php?site=teaminfo&teamID=$teamID'>$teamNAME</a>.</h4></td>
+    <td align='right'>
+      <input name='teaminvID' type='hidden' id='teaminvID' value='$teaminvID'>
+      <select name='action' id='action'><option value='1' selected>Accept</option><option value='0'>Decline</option></select>
+      <input type='submit' name='go' id='go' value='go'>
+    </td>
+  </tr>
+</table>
+</form>
+</div>

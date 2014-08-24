@@ -1,0 +1,33 @@
+<script src="../js/bbcode.js" language="jscript" type="text/javascript"></script>
+<form name="post" method="post" action="./admincp.php?site=newsedit&action=add">
+<div id="maintitle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><h1>&#8226;  ADD NEW NEWS</h1></td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td width="150"><h4>News title:</h4></td>
+    <td><input name="title" type="text" id="title" maxlength="60" /></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$addbbcode</td>
+  </tr>
+  <tr>
+    <td valign="top"><h4>Content:</h4></td>
+    <td>
+    <textarea name="content" rows="10" class="form_off" id="content" style="width:100%; resize: none;" onFocus="this.className='form_on'" onBlur="this.className='form_off'"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input name="add" type="submit" id="add" value="add news" /></td>
+  </tr>
+</table>
+</div>
+</form>
+

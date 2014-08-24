@@ -1,0 +1,55 @@
+<form id="newsadd" name="newsadd" method="post" action="./admincp.php?site=laddersedit">
+<div id="maintitle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><h1>&#8226;   NEW LADDER</h1></td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td><h4>Ladder title:</h4></td>
+    <td><input name="title" type="text" id="title" maxlength="60" /></td>
+  </tr>
+  <tr>
+    <td><h4>Game:</h4></td>
+    <td><select name="game" id="game">$gameLIST</select></td>
+  </tr>
+  <tr>
+    <td><h4>Gamemode:</h4></td>
+    <td><select name="gamemode" id="gamemode">
+        <option value="sd">Search &amp; Destroy</option>
+        <option value="dm">Death Match</option>
+        <option value="ctf">Capture The Flag</option>
+        <option value="race">Race</option>
+        <option value="match">Match</option>
+    	</select>    </td>
+  </tr>
+  <tr>
+    <td><h4>Required GUID</h4></td>
+    <td><select name="guid" id="guid">$guidLIST</select></td>
+  </tr>
+  <tr>
+    <td><h4>Active:</h4></td>
+    <td><select name="active" id="active"><option value="1">Active</option><option value="0">Inactive</option></select></td>
+  </tr>
+  <tr>
+    <td><h4>Rating system:</h4></td>
+    <td><select name="ratingsystem" id="ratingsystem">
+      <option value="elo" $selected9>ELO rating</option>
+      <option value="entish" $selected10>entish elo</option>
+    </select></td>
+  </tr>
+  <tr>
+    <td width="200"><h4>Rules:</h4></td>
+    <td><h4><textarea name="rules" id="rules" cols="60" rows="5"></textarea></h4></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="submit" name="add" id="add" value="add ladder" /></td>
+  </tr>
+</table>
+</div>
+</form>
+

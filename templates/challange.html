@@ -1,0 +1,105 @@
+<script type="text/javascript" src="js/calendar.js"></script>
+<form action="index.php?site=challange" method="post">
+<div id="maintitle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="50%"><h1>&#8226; CHALLANGE</h1></td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td width="150"><h4>Game:</h4></td>
+    <td><h5>$gameTITLE</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Ladder Name:</h4></td>
+    <td><h5>$ladderTITLE</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Gamemode:</h4></td>
+    <td><h5>$gamemode</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Opponent:</h4></td>
+    <td><h5><a href="index.php?site=teaminfo&amp;teamID=$opponentID">$opponentNAME</a></h5></td>
+  </tr>
+  <tr>
+    <td><h4>My Team:</h4></td>
+    <td><select name="myteamID" id="myteamID">$myteamLIST</select></td>
+  </tr>
+  <tr>
+    <td><h4>Map:</h4></td>
+    <td><select name="map" id="map">$mapLIST</select>    </td>
+  </tr>
+  <tr>
+    <td><h4>Date:</h4></td>
+    <td><script>DateInput('date', true, 'DD-MON-YYYY')</script></td>
+  </tr>
+  <tr>
+    <td><h4>Time:</h4></td>
+    <td>
+      <h5>
+        <select name="hours" id="hours">
+          <option value="1" selected="selected">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+        </select>
+        hours
+        <select name="minutes" id="minutes">
+          <option value="5" selected="selected">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="25">25</option>
+          <option value="30">30</option>
+          <option value="35">35</option>
+          <option value="40">40</option>
+          <option value="45">45</option>
+          <option value="50">50</option>
+          <option value="55">55</option>
+        </select>
+      minutes</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Server IP:</h4></td>
+    <td><input type="text" name="serverip" id="serverip" /></td>
+  </tr>
+  <tr>
+    <td><h4>Server PASS:</h4></td>
+    <td><input type="text" name="serverpass" id="serverpass" /></td>
+  </tr>
+  <tr>
+    <td><input name="ladderID" type="hidden" id="ladderID" value="$ladderID" /><input name="opponentID" type="hidden" id="opponentID" value="$opponentID" /></td>
+    <td><input type="submit" name="challange" id="challange" value="challange" /></td>
+  </tr>
+</table>
+</div>
+</form>
+<script>
+var date = new Date();
+var later = new Date(date.getTime() + (5*60*1000))
+document.getElementById("hours").value = later.getHours();
+document.getElementById("minutes").value = later.getMinutes();
+</script>

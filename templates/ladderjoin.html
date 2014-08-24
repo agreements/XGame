@@ -1,0 +1,33 @@
+<form action="index.php?site=ladderinfo&amp;ladderID=$ladderID" method="post">
+<div id="maintitle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><h1>&#8226; JOIN LADDER</h1></td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td width="150"><h4>Ladder name:</h4></td>
+    <td><h5>$ladderTITLE</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Game:</h4></td>
+    <td><h5>$gameTITLE</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Gametype:</h4></td>
+    <td><h5>$gamemode</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Team:</h4></td>
+    <td><select name="teamIDlist" id="teamIDlist">$teamLIST</select></td>
+  </tr>
+  <tr>
+    <td><input name="ladderID" type="hidden" id="ladderID" value="$ladderID" /></td>
+    <td><input type="submit" name="joinladder" id="joinladder" value="join" /></td>
+  </tr>
+</table>
+</div>
+</form>

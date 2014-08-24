@@ -1,0 +1,237 @@
+/* WEB PAGE :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+body {
+	background-image: url(../images/web/background.jpg);
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-color: #0c0c0c;
+	background-position: top;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+a:link {
+	color: #ff8f00;
+	text-decoration: none;
+}
+a:visited {
+	color: #ff8f00;
+	text-decoration: none;
+}
+a:hover {
+	color: #ff5e00;
+	text-decoration: none;
+}
+a:active {
+	color: #ff8f00;
+	text-decoration: none;
+}
+/* WEB CONTENT :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+#webpage {
+	background: #222222;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #000000;
+}
+#webmain {
+	background: #464646;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #555555;
+}
+#webside {
+	background: #464646;
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #555555;
+}
+/* MAIN AREA ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+#maintitle {
+	background-image: url(../images/web/titlebg.png);
+	color: #FFFFFF;
+	padding: 5px 10px;
+	border: 1px solid #555555;
+}
+#maintitle a {color: #FFFFFF;}
+
+#maincontent {
+	background: #282828;
+	padding: 5px;
+	border:1px solid #555555;
+	text-align:justify;
+}
+#profileimage {
+	width:80px; 
+	height:80px; 
+	padding: 5px; 
+	border:3px solid #555555; 
+	border-radius: 5px; 
+	box-shadow: 3px 3px 5px #000000;
+}
+/* TEXT AREA ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+#textcontent {
+	background: #282828;
+	padding: 5px;
+	border:1px solid #555555;
+	text-align:justify;
+	overflow:hidden;
+}
+#textbottom {
+	background-image: url(../images/web/titlebg.png);
+	color: #FFFFFF;
+	padding: 10px 10px;
+	border: 1px solid #555555;
+	margin-bottom: 20px;
+}
+/* COMMENT AREA ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+#commentcotent {
+	background: #282828;
+	padding: 5px;
+	border:1px solid #555555;
+	text-align:justify;
+}
+#commentitle {
+	padding:2px 5px;
+}
+#commenttext {
+	padding:0px 10px;
+	text-align:justify;
+}
+#commentbutton {
+	float: right;
+}
+/* OTHERS :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+#homecontent {
+	background: #282828;
+	border:1px solid #555555;
+}
+.newsimage {
+    float: right;
+    padding: 5px;
+	margin: 10px;
+	border:1px solid #555555;
+	background: #383838;
+}
+/* LIST AREA ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+#list {
+	background: #282828;
+	border:1px solid #555555;
+	margin: 0px 0px;
+	padding: 2px 5px;
+}
+/* BRACKETS ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+#bracketfield {
+	background: #383838;
+	margin: 0px 0px;
+	padding: 5px 5px;
+	height: 15px;
+}
+#bracketfieldselected {
+	background: #585858;
+	margin: 0px 0px;
+	padding: 5px 5px;
+	height: 15px;
+}
+#bracketgroup {
+	border-right: 1px solid #555555;
+	margin: 10px 0px;
+}
+#bracketdetails {
+	padding: 5px 5px;;
+}
+/* TEXT ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+h3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+h4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+h5 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+.red {color: #e62323}
+.green {color: #33CC00}
+.yellow {color: #CCFF00}
+.quote {
+	border: 1px solid #555555;
+	background: #333333;
+	margin: 15px;
+	padding: 5px;
+}
+/* FORMS :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+form {
+	border: none;
+	margin: 0px;
+}
+input, textarea, select, button {
+	border: 1px solid #555555;
+	background-color: #d1d1d1;
+	font: normal 10px Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	padding: 2px;
+}
+/* Basic jQuery Slider essential styles */
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{position:absolute; display:none;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.bjqs-controls.v-centered li a{position:absolute;}
+ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a{display:inline-block;}
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+ul.bjqs-controls.v-centered li a{
+	display:block;
+	padding:10px;
+	background:#fff;
+	color:#000;
+	text-decoration: none;
+}
+ol.bjqs-markers li a{
+	padding:5px 10px;
+	background:#000;
+	color:#fff;
+	margin:5px;
+	text-decoration: none;
+}
+ol.bjqs-markers li.active-marker a, ol.bjqs-markers li a:hover{
+	background: #999;
+}
+p.bjqs-caption{
+	background: rgba(255,255,255,0.5);
+	color:#000000;
+	font-weight: bold;
+}

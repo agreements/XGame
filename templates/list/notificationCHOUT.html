@@ -1,0 +1,18 @@
+<div id='list'>
+<form method='post' action='index.php?site=challengeedit'>
+<table width='100%' border='0' cellspacing='1' cellpadding='0'>
+  <tr>
+    <td width='50'><h5><a href='index.php?site=match&amp;matchID=$matchID'>$matchID</a></h5></td>
+    <td width='150'><h5><a href='index.php?site=teaminfo&teamID=$opponent1'>$opponent1name</a></h5></td>
+    <td width='150'><h5><a href='index.php?site=teaminfo&teamID=$opponent2'>$opponent2name</a></h5></td>
+    <td width='100'> <h5>$gameTITLE</h5></td>
+    <td><h5><a href='index.php?site=ladderinfo&ladderID=$ladderID&action=ranking'>$ladderTITLE</a></h5></td>
+    <td align='right'>
+    	<input name='matchID' type='hidden' id='matchID' value='$matchID'>
+   		<input type='submit' name='edit' id='edit' value='edit'>
+    	<input type='submit' name='delete' id='delete' value='delete'>
+    </td>
+  </tr>
+</table>
+</form>
+</div>

@@ -1,0 +1,12 @@
+<form name='teammembers' method='post' action='index.php?site=teammembers'>
+<div id='list'>
+<table width='100%' border='0' cellspacing='2' cellpadding='2'>
+<tr>
+  <td width='200'><h4>$nickname <input name='memberID' type='hidden' id='memberID' value='$memberID'><input name='teamID' type='hidden' id='teamID' value='$teamID'></h4></td>
+  <td><select name='rights' id='rights'><option value='1' $right1>player</option><option value='2' $right2>trusted</option><option value='3' $right3>admin</option></select></td>
+  <td align='right'><input type='submit' name='delete' id='delete' value='delete'> 
+    <input type='submit' name='edit' id='edit' value='edit'></td>
+</tr>
+</table>
+</div>
+</form>

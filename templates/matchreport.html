@@ -1,0 +1,52 @@
+<script src="js/bbcode.js" language="jscript" type="text/javascript"></script>
+<form action="index.php?site=matchreport" method="post" name="post">  
+<div id="maintitle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><h1>&#8226; MATCH REPORT</h1></td></td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td><h4>Match ID:</h4></td>
+    <td><h5>$matchID</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Opponent:</h4></td>
+    <td><h5>$opponentNAME</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Rating:</h4></td>
+    <td><select name="rating" id="rating">
+      <option value="1">1 - Bad opponent</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10 - Nice opponent</option>
+    </select></td>
+  </tr>
+  <tr>
+    <td width="150"><h4>&nbsp;</h4></td>
+    <td>$addbbcode</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h4>Report:</h4></td>
+    <td><textarea style="width:100%; resize: none;" name="content" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'" id="content"></textarea></td>
+  </tr>
+  <tr>
+    <td><input name="matchID" type="hidden" id="matchID" value="$matchID" />
+      <input name="opponentID" type="hidden" id="opponentID" value="$opponentID" /></td>
+    <td><input type="submit" name="report" id="report" value="send report" /></td>
+  </tr>
+</table>
+</div>
+</form>
+
+

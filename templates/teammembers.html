@@ -1,0 +1,22 @@
+<form action="index.php?site=teammembers" method="post">
+<div id="maintitle">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="50%"><h1>&#8226; EDIT MEMBERS - $teamNAME</h1></td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td colspan="2"><h5>
+      <input name="teamID" type="hidden" id="teamID" value="$teamID" />
+      Add new member: 
+    <input name="newmemberID" type="text" id="newmemberID" size="10" maxlength="10" /> (insert member ID) 
+	<input type="submit" name="add" id="add" value="add" />
+    </h5>
+    </td>
+  </tr>
+</table>
+</div>
+</form>

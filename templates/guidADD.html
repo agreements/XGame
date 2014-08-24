@@ -1,0 +1,29 @@
+<form action="index.php?site=guids" method="post">
+<div id="maintitle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><h1>&#8226; ADD GAME GUID</h1></td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+<table width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td width="150"><h4>Game:</h4></td>
+    <td><select name="guidID" id="guidID">$guidLIST</select></td>
+  </tr>
+  <tr>
+    <td><h4>GUID Value:</h4></td>
+    <td><input name="value" type="text" id="value" maxlength="60" /></td>
+  </tr>
+  <tr>
+    <td><h4> Note:</h4></td>
+    <td><input name="note" type="text" id="note" maxlength="60" /></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="submit" name="add" id="add" value="add guid" /></td>
+  </tr>
+</table>
+</div>
+</form>

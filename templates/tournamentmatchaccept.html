@@ -1,0 +1,32 @@
+<form action="index.php?site=tournamentmatch&tournamentID=$tournamentID&bracketID=$bracketID" method="post">
+<div id="maintitle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="50%"><h1>&#8226; ADMIN CLAIM</h1></td>
+    <td width="50%" align="right"><h5 class="green">&nbsp;</h5></td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td width="150"><h4><a href="index.php?site=teaminfo&amp;teamID=$opponent1">$team1NAME</a></h4></td>
+    <td><h5><input type="text" name="adminreport1" id="adminreport1" />
+    </h5></td>
+    <td align="right">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h4><a href="index.php?site=teaminfo&amp;teamID=$opponent2">$team2NAME</a></h4></td>
+    <td><h5><input type="text" name="adminreport2" id="adminreport2" />
+    </h5></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h4>&nbsp;</h4></td>
+    <td><h5><input type="submit" name="accept" id="accept" value="confirm" />
+    </h5></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</div>
+</form>

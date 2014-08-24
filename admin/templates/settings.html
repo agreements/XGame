@@ -1,0 +1,62 @@
+<form id="newsadd" name="newsadd" method="post" action="admincp.php?site=settings">
+<div id="maintitle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><h1>&#8226;  ADD NEW NEWS</h1></td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td><h4>User activation:</h4></td>
+    <td><select name="activation" id="activation">
+      <option value="1" $option1>Auto activation</option>
+      <option value="2" $option2>Mail activation</option>
+      <option value="3" $option3>Admin activation</option>
+    </select>
+    </td>
+  </tr>
+  <tr>
+    <td width="200"><h4>Website URL:</h4></td>
+    <td><h5>http:// <input name="url" type="text" id="url" value="$url" size="50" maxlength="255" /> /</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Admin email:</h4></td>
+    <td><input name="adminmail" type="text" id="adminmail" value="$adminmail" maxlength="255" /></td>
+  </tr>
+  <tr>
+    <td><h4>Page title:</h4></td>
+    <td><input name="pagetitle" type="text" id="pagetitle" value="$pagetitle" maxlength="255" /></td>
+  </tr>
+  <tr>
+    <td><h4>Error reporting:</h4></td>
+    <td><select name="errorreporting" id="errorreporting">
+      <option value="E_ERROR" $report1>E_ERROR</option>
+      <option value="E_WARNING" $report2="report2">E_WARNING</option>
+      <option value="E_PARSE" $report3="report3">E_PARSE</option>
+      <option value="E_NOTICE" $report4="report4">E_NOTICE</option>
+      <option value="E_ALL" $report5="report5">E_ALL</option>
+      <option value="0" $report6="report6">0</option>
+    </select></td>
+  </tr>
+  <tr>
+    <td><h4>News per page</h4></td>
+    <td><input name="newsPP" type="text" id="newsPP" value="$newsPP" maxlength="255" /></td>
+  </tr>
+  <tr>
+    <td><h4>News per page (admin panel)</h4></td>
+    <td><input name="newsPPlist" type="text" id="newsPPlist" value="$newsPPlist" maxlength="255" /></td>
+  </tr>
+  <tr>
+    <td><h4>Ranked teams per page</h4></td>
+    <td><input name="rankingPP" type="text" id="rankingPP" value="$rankingPP" maxlength="255" /></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="submit" name="update" id="update" value="update" /></td>
+  </tr>
+</table>
+</div>
+</form>
+

@@ -1,0 +1,26 @@
+<form method="post" action="gamesedit.php?gameID=$gameID&action=edit" enctype="multipart/form-data">
+<div id="maintitle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><h1>&#8226;  EDIT GAME</h1></td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td width="200"><h4>Game title:</h4></td>
+    <td><input name="title" type="text" id="title" value="$title" maxlength="60" /></td>
+  </tr>
+  <tr>
+    <td><h4>Game image:</h4></td>
+    <td><input name="pic" type="file" id="pic" /></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="submit" name="edit" id="edit" value="edit game" /></td>
+  </tr>
+</table>
+</div>
+</form>
+

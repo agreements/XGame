@@ -1,0 +1,46 @@
+<form action="index.php?site=resultprocess" method="post">
+<div id="maintitle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="50%"><h1>&#8226; <a href="index.php?site=teaminfo&amp;teamID=$opponent1">$opponent1name</a> vs <a href="index.php?site=teaminfo&amp;teamID=$opponent2">$opponent2name</a></h1></td>
+    <td width="50%" align="right"> <h2>MATCH ID: $matchID</h2></td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td width="150"><h4>Score:</h4></td>
+    <td>
+    <select name="status" id="status">
+      <option value="canceled" $selected1>Match was canceled</option>
+      <option value="noshow1" $selected2>$opponent1name did not show</option>
+      <option value="noshow2" $selected3>$opponent2name did not show</option>
+      <option value="played" $selected4>Match was played</option>
+    </select>	</td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>
+        <div class="box" id="result">
+          <table width="100%" border="0" cellspacing="1" cellpadding="1">
+            <tr>
+              <td><h5><a href="index.php?site=teaminfo&amp;teamID=$opponent1" target="_blank">$opponent1name:</a></h5></td>
+              <td width="100%"><input name="score1" type="text" id="score1" size="5" maxlength="3" /></td>
+            </tr>
+            <tr>
+              <td><h5><a href="index.php?site=teaminfo&amp;teamID=$opponent2" target="_blank">$opponent2name:</a></h5></td>
+              <td><input name="score2" type="text" id="score2" size="5" maxlength="3" /></td>
+            </tr>
+          </table>
+          </div>
+      </td>
+    </tr>
+  <tr>
+    <td><input name="matchID" type="hidden" id="matchID" value="$matchID" /></td>
+    <td><input type="submit" name="edit" id="edit" value="edit" /></td>
+  </tr>
+</table>
+</div>
+</form>
+<script src="js/score.js"></script>

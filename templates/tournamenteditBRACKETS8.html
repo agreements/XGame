@@ -1,0 +1,59 @@
+<form action="index.php?site=tournamentedit&tournamentID=$tournamentID&action=brackets" method="post"> 
+<div id="maintitle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><h1>&#8226; BRACKETS 16 teams</h1></td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="100"><h5>Spot 1</h5></td>
+      <td><select  name="r4s1" id="$r4s1"><option value="0">select</option>$teamLIST</select></td>
+    </tr>
+    <tr>
+      <td><h5>Spot 2</h5></td>
+      <td><select  name="r4s2" id="$r4s2"><option value="0">select</option>$teamLIST</select></td>
+    </tr>
+    <tr>
+      <td><h5>Spot 3</h5></td>
+      <td><select  name="r4s3" id="$r4s3"><option value="0">select</option>$teamLIST</select></td>
+    </tr>
+    <tr>
+      <td><h5>Spot 4</h5></td>
+      <td><select  name="r4s4" id="$r4s4"><option value="0">select</option>$teamLIST</select></td>
+    </tr>
+    <tr>
+      <td><h5>Spot 5</h5></td>
+      <td><select  name="r4s5" id="$r4s5"><option value="0">select</option>$teamLIST</select></td>
+    </tr>
+    <tr>
+      <td><h5>Spot 6</h5></td>
+      <td><select  name="r4s6" id="$r4s6"><option value="0">select</option>$teamLIST</select></td>
+    </tr>
+    <tr>
+      <td><h5>Spot 7</h5></td>
+      <td><select  name="r4s7" id="$r4s7"><option value="0">select</option>$teamLIST</select></td>
+    </tr>
+    <tr>
+      <td><h5>Spot 8</h5></td>
+      <td><select  name="r4s8" id="$r4s8"><option value="0">select</option>$teamLIST</select></td>
+    </tr>
+    <tr>
+      <td><h4>&nbsp;</h4></td>
+      <td><input type="submit" name="set8" id="set8" value="set brackets" /></td>
+    </tr>
+  </table>
+</div>
+</form>
+<script>
+	var r4s1element = document.getElementsByName("r4s1"); var id = r4s1element[0].getAttribute("id"); document.getElementsByName("r4s1")[0].value=id;
+	var r4s2element = document.getElementsByName("r4s2"); var id = r4s2element[0].getAttribute("id"); document.getElementsByName("r4s2")[0].value=id;
+	var r4s3element = document.getElementsByName("r4s3"); var id = r4s3element[0].getAttribute("id"); document.getElementsByName("r4s3")[0].value=id;
+	var r4s4element = document.getElementsByName("r4s4"); var id = r4s4element[0].getAttribute("id"); document.getElementsByName("r4s4")[0].value=id;
+	var r4s5element = document.getElementsByName("r4s5"); var id = r4s5element[0].getAttribute("id"); document.getElementsByName("r4s5")[0].value=id;
+	var r4s6element = document.getElementsByName("r4s6"); var id = r4s6element[0].getAttribute("id"); document.getElementsByName("r4s6")[0].value=id;
+	var r4s7element = document.getElementsByName("r4s7"); var id = r4s7element[0].getAttribute("id"); document.getElementsByName("r4s7")[0].value=id;
+	var r4s8element = document.getElementsByName("r4s8"); var id = r4s8element[0].getAttribute("id"); document.getElementsByName("r4s8")[0].value=id;
+</script>

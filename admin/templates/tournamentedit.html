@@ -1,0 +1,100 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/datepicker.js"></script>
+<link type="text/css" href="js/datepicker.css" rel="stylesheet" />
+<form id="newsadd" name="newsadd" method="post" action="tournamentsedit.php?tournamentID=$tournamentID&action=edit" enctype="multipart/form-data">
+<div id="maintitle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><h1>&#8226; EDIT TOURNAMENT</h1></td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td><h4>Ladder title:</h4></td>
+    <td><input name="title" type="text" id="title" value="$title" maxlength="60" /></td>
+  </tr>
+  <tr>
+    <td><h4>Game:</h4></td>
+    <td><select name="game" id="game">$gameLIST</select></td>
+  </tr>
+  <tr>
+    <td><h4>Gamemode:</h4></td>
+    <td><select name="gamemode" id="gamemode">
+      <option value="sd" $selected4>Search &amp; Destroy</option>
+      <option value="dm" $selected5>Death Match</option>
+      <option value="ctf" $selected6>Capture The Flag</option>
+      <option value="race" $selected7>Race</option>
+      <option value="match" $selected8>Match</option>
+    </select></td>
+  </tr>
+  <tr>
+    <td><h4>Required GUID:</h4></td>
+    <td><select name="guid" id="guid">$guidLIST</select></td>
+  </tr>
+  <tr>
+    <td><h4>Team size:</h4></td>
+    <td>
+    <select name="size" id="size">
+      <option value="8" $selected9>8 Teams</option>
+      <option value="16" $selected10>16 Teams</option>
+      <option value="32" $selected11>32 Teams</option>
+    </select>
+    </td>
+  </tr>
+  <tr>
+    <td><h4>Prize for 1st place:</h4></td>
+    <td><input name="prize1" type="text" id="prize1" value="$prize1" maxlength="60" /></td>
+  </tr>
+  <tr>
+    <td><h4>Prize for 2nd place:</h4></td>
+    <td><input name="prize2" type="text" id="prize2" value="$prize2" maxlength="60" /></td>
+  </tr>
+  <tr>
+    <td><h4>Prize for 3rd place:</h4></td>
+    <td><input name="prize3" type="text" id="prize3" value="$prize3" maxlength="60" /></td>
+  </tr>
+  <tr>
+    <td><h4>SIGNUP start</h4></td>
+    <td><input type="text" name="signup" value="$signup" id="signup">
+		<script type="text/javascript">
+            $(function(){
+                $('*[name=signup]').appendDtpicker();
+            });
+        </script>
+    </td>
+  </tr>
+  <tr>
+    <td><h4>SIGNUP closed</h4></td>
+    <td><input type="text" name="closed" value="$closed" id="closed">
+		<script type="text/javascript">
+            $(function(){
+                $('*[name=closed]').appendDtpicker();
+            });
+        </script>
+    </td>
+  </tr>
+  <tr>
+    <td><h4>Tournament start</h4></td>
+    <td><input type="text" name="start" value="$start" id="start">
+		<script type="text/javascript">
+            $(function(){
+                $('*[name=start]').appendDtpicker();
+            });
+        </script>
+    </td>
+  </tr>
+  <tr>
+    <td width="200"><h4>Rules:</h4></td>
+    <td><h4><textarea name="rules" id="rules" cols="60" rows="5">$rules</textarea>
+    </h4></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="submit" name="edit" id="edit" value="edit tournament" /></td>
+  </tr>
+</table>
+</div>
+</form>
+

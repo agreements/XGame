@@ -1,0 +1,20 @@
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="js/slider.js"></script>
+<div id="homecontent">
+  <div id="banner-fade">
+      <ul class="bjqs">
+        <li><img src="images/slide/banner01.jpg" title="Legion TD Signups is now open..."></li>
+        <li><img src="images/slide/banner02.jpg" title="DotA Signups is now open..."></li>
+        <li><img src="images/slide/banner03.jpg" title="Mystery Event Signups is now open..."></li>
+      </ul>
+  </div>
+</div>
+<script class="secret-source">
+jQuery(document).ready(function($) {
+  $('#banner-fade').bjqs({
+    height      : 200,
+    width       : 810,
+    responsive  : true
+  });
+});
+</script>

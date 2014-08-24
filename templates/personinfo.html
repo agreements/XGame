@@ -1,0 +1,48 @@
+<div id="maintitle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="50%"><h1>&#8226; PLAYER $nickname</h1></td>
+    <td width="50%" align="right"> $messageB $editB</td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+<table width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td width="150"><h4>Nickname:</h4></td>
+    <td><h4>$nickname</h4></td>
+    <td width="250" rowspan="4">&nbsp;</td>
+    <td width="90" rowspan="4"><div style="width:80px; height:80px; background-image: url(images/avatars/$avatarURL); padding: 5px; border:3px solid #777777; border-radius:10px; box-shadow: 3px 3px 5px #000000;"></div></td>
+  </tr>
+  <tr>
+    <td><h4>Gender:</h4></td>
+    <td><h4>$gender</h4></td>
+  </tr>
+  <tr>
+    <td><h4>Country:</h4></td>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="30"><div style="width:16px; height:11px; background-image: url(images/flags/$countryCODE.gif); border:2px solid #777777; border-radius:5px; box-shadow: 1px 1px 3px #000000;"></div></td>
+        <td><h4>$countryNAME</h4></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><h4>Member since: </h4></td>
+    <td><h4>$membersince</h4></td>
+  </tr>
+  <tr>
+    <td><h4>Status:</h4></td>
+    <td>$userSTATUS</td>
+    <td></td>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+<div id="submenu">
+  <ul>
+    <li><a href="index.php?site=personinfo&amp;pid=$member&amp;action=guids" title="Home">GUIDS</a></li>
+    <li><a href="index.php?site=personinfo&amp;pid=$member&amp;action=teams" title="New">TEAMS</a></li>
+    $menuBAN
+  </ul>
+</div>
+</div>

@@ -1,0 +1,57 @@
+<form action="index.php?site=challengeedit" method="post">
+<div id="maintitle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><h1>&#8226; CHALLANGE ACCEPT</h1></td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td width="150"><h4>Game:</h4></td>
+    <td><h5>$gameTITLE</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Ladder Name:</h4></td>
+    <td><h5>$ladderTITLE</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Gamemode:</h4></td>
+    <td><h5>$gamemode</h5></td>
+  </tr>
+  <tr>
+    <td><h4>My Team:</h4></td>
+    <td><h5><a href="index.php?site=teaminfo&amp;teamID=$opponent2" target="_blank">$opponent2name</a></h5></td>
+  </tr>
+  <tr>
+    <td><h4>Opponent:</h4></td>
+    <td><h5><a href="index.php?site=teaminfo&amp;teamID=$opponent1" target="_blank">$opponent1name</a></h5></td>
+  </tr>
+  <tr>
+    <td><h4>Map:</h4></td>
+    <td><h5>$opmap</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Our map:</h4></td>
+    <td><select name="map" id="map">$mapLIST</select>    </td>
+  </tr>
+  <tr>
+    <td><h4>Date:</h4></td>
+    <td><h5>$chdate</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Server IP:</h4></td>
+    <td><h5>$serverIP</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Server PASS:</h4></td>
+    <td><h5>$serverPASS</h5></td>
+  </tr>
+  <tr>
+    <td><input name="matchID" type="hidden" id="matchID" value="$matchID" /></td>
+    <td><input type="submit" name="acceptch" id="acceptch" value="accept challenge" /></td>
+  </tr>
+</table>
+</div>
+</form>

@@ -1,0 +1,26 @@
+<form id="form1" name="form1" method="post" action="./admincp.php?site=mapsedit&action=add">
+<div id="maintitle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><h1>&#8226;  ADD NEW MAP</h1></td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td width="200"><h4>Map name:</h4></td>
+    <td><input name="title" type="text" id="title" maxlength="60" /></td>
+  </tr>
+  <tr>
+    <td><h4>Ladder:</h4></td>
+    <td><select name="ladderID" id="ladderID">$ladderLIST</select></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="submit" name="add" id="add" value="add map" /></td>
+  </tr>
+</table>
+</div>
+</form>
+

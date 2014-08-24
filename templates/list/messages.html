@@ -1,0 +1,15 @@
+<div id='list'>
+<table width='100%' border='0' cellpadding='1' cellspacing='1'>
+  <tr>
+    <td width='40' align='right'>$status</td>
+    <td width='100' align='left'><h5><a href='index.php?site=personinfo&pid=$memberID' target='_blank'>$nickname</a></h5></td>
+    <td align='left'><$read>$title<$read></td>
+    <td width='150' align='right'><h5>$lastdate</h5></td>
+    <td width='30' align='center'>
+    <form name='form' method='post' action='index.php?site=message'>
+      <input name='messageID' type='hidden' id='messageID' value='$messageID'>
+		<input type='submit' name='view' id='view' value='view'>
+	</form>    </td>
+  </tr>
+</table>
+</div>

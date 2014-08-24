@@ -1,0 +1,24 @@
+<script src="js/bbcode.js" language="jscript" type="text/javascript"></script>
+<form action="index.php?site=message" method="post" name="post">  
+<div id="maintitle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="50%"><h1>&#8226; reply</h1></td>
+    <td width="50%" align="right"><input name="messageID" type="hidden" id="messageID" value="$messageID" /><input type="submit" name="reply" id="reply" value="reply" /></td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td>$addbbcode</td>
+  </tr>
+  <tr>
+    <td><textarea style="width:100%; resize: none;" name="content" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'" id="content"></textarea></td>
+  </tr>
+  <tr>
+    <td align="center"></td>
+    </tr>
+</table>
+</div>
+</form>

@@ -1,0 +1,109 @@
+<script src="js/bbcode.js" language="jscript" type="text/javascript"></script>
+<form action="index.php?site=conflictedit" method="post" name="post">  
+<div id="maintitle">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><h1>&#8226; <a href="index.php?site=teaminfo&amp;teamID=$opponent1">$opponent1name</a> vs <a href="index.php?site=teaminfo&amp;teamID=$opponent2">$opponent2name</a></h1></td>
+  </tr>
+</table>
+</div>
+<div id="maincontent">
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+  <tr>
+    <td width="150"><h2>LADDER:</h2></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><h4>Game:</h4></td>
+    <td><h5>$gameTITLE</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Ladder Name:</h4></td>
+    <td><h5><a href="index.php?site=ladderinfo&amp;ladderID=$ladderID" target="_blank">$ladderTITLE</a></h5></td>
+  </tr>
+  <tr>
+    <td><h4>Gamemode:</h4></td>
+    <td><h5>$gamemode</h5></td>
+  </tr>
+  <tr>
+    <td><h4>TEAMS:</h4></td>
+    <td><h5><a href="index.php?site=teaminfo&amp;teamID=$opponent1" target="_blank">$opponent1name</a> 
+     versus <a href="index.php?site=teaminfo&amp;teamID=$opponent2" target="_blank">$opponent2name</a> (<span class="green">$score</span>)</h5>    </td>
+  </tr>
+  <tr>
+    <td><h2>SETTINGS:</h2></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><h4>Maps:</h4></td>
+    <td><h5>$map1TITLE / $map2TITLE</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Date:</h4></td>
+    <td><h5>$date</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Server IP:</h4></td>
+    <td><h5>$serverIP</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Server PASS:</h4></td>
+    <td><h5>$serverPASS</h5></td>
+  </tr>
+  <tr>
+    <td><h2>CONFLICT:</h2></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><h4>Claim:</h4></td>
+    <td><h5 class="green">$claim</h5></td>
+  </tr>
+  <tr>
+    <td><h4>Description:</h4></td>
+    <td><h5>$description</h5></td>
+  </tr>
+  <tr>
+    <td><h2>VERDICT:</h2></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><h4>Enter score:</h4></td>
+    <td><select name="status" id="status">
+        <option value="canceled" $selected1>Match was canceled</option>
+        <option value="noshow1" $selected2>$opponent1name did not show</option>
+        <option value="noshow2" $selected3>$opponent2name did not show</option>
+        <option value="played" $selected4>Match was played</option>
+        </select>    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>
+    <div class="box" id="result">
+        <table width="100%" border="0" cellspacing="1" cellpadding="1">
+          <tr>
+            <td><h5><a href="index.php?site=teaminfo&amp;teamID=$opponent1" target="_blank">$opponent1name:</a></h5></td>
+            <td width="100%"><input name="score1" type="text" id="score1" size="5" maxlength="3" /></td>
+          </tr>
+          <tr>
+            <td><h5><a href="index.php?site=teaminfo&amp;teamID=$opponent2" target="_blank">$opponent2name:</a></h5></td>
+            <td><input name="score2" type="text" id="score2" size="5" maxlength="3" /></td>
+          </tr>
+        </table>
+    </div>    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>$addbbcode</td>
+  </tr>
+  <tr>
+    <td valign="top"><h4>Verdict:</h4></td>
+    <td><textarea style="width:100%; resize: none;" name="content" class="form_off" onfocus="this.className='form_on'" onblur="this.className='form_off'" id="content"></textarea></td>
+  </tr>
+  <tr>
+    <td><input name="matchID" type="hidden" id="matchID" value="$matchID" /><input name="conflictID" type="hidden" id="conflictID" value="$conflictID" /></td>
+    <td><input type="submit" name="solveconflict" id="solveconflict" value="solve" /></td>
+  </tr>
+</table>
+</div>
+</form>
+<script src="js/score.js"></script>
